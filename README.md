@@ -20,9 +20,10 @@ so that you can access the data for an episode with a single tuple of informatio
 ```episode_list.loc[('TNG',72)]```
 for the best cliffhanger in the history of television.
 * **table_of_lines.csv**, containing every line of dialogue from the first six series (TOS, TAS, TNG, DS9, VOY, ENT). I suggest importing it either without an index or with ```index_col=['series','ep_number','scene_number','line_number']```.
-* **parser.py**, which contains the functions I used to compile the episode list and the full table of lines from ```all_scripts_raw.json```. If you pass that JSON array to ```make_big_line_table()```, the output is the DataFrame of lines. Note that ```build_episode_table()``` will not quite give you the right thing to make the table of episodes, since several titles get extracted wrong or inconsistently from the scripts, and I fixed them by hand.
+* **trekparser.py**, which contains the functions I used to compile the episode list and the full table of lines from ```all_scripts_raw.json```. If you pass that JSON array to ```make_big_line_table()```, the output is the DataFrame of lines. Note that ```build_episode_table()``` will not quite give you the right thing to make the table of episodes, since several titles get extracted wrong or inconsistently from the scripts, and I fixed them by hand.
 * **trek_analysis1.ipnyb**, a (currently very) brief intro to the data set.
 * **trek_analysis2.ipynb**, a more in-depth look at which characters appear in which locations most frequently in each series.
+* **table_of_lines_v1.csv**, a much earlier version of the big table of all the lines.
 
 Usage
 -----
